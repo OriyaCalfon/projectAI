@@ -1,0 +1,115 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 0.8fr 3fr;
+  height: 100vh;
+}
+
+.main {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(205 180 228);
+}
+
+#mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.7rem;
+}
+
+.side {
+  /* background-color: #f4f4f4;  צבע אפור יפה  */
+  background-color: rgb(236 235 188);
+  padding: 20px;
+  box-sizing: border-box;
+ 
+}
+
+#btn{
+  padding: 0.5rem;
+}
+button {
+  border: 3px solid #f28d00; 
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ead5ff;
+  /* background-color: rgb(236, 163, 27); */
+  /* background-color: rgb(237, 231, 182); */
+  max-width: 10rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: rgb(205 180 228);
+}
+
+input {
+  height: 2rem;
+  border-radius: 0.3rem;
+  background-color: #ead5ff;
+}
+
+#response{
+  height: 100px;
+  max-width: 700px;
+  background-color: #b07bc8;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.select{
+  width: 200px;
+}
+
+.temperature{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.temperature input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: #191b19; 
+  border-radius: 5px; 
+}
+
+.temperature input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; 
+  height: 20px; 
+  background: #bf34db; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  margin-top: -6px; 
+}
+
+.temperature input[type="range"] {
+  -webkit-appearance: none; 
+ 
+  height: 8px; 
+  background: transparent; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.select .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: black; 
+}
+
+.select .MuiInputLabel-root.Mui-focused {
+  color: black; 
+}
+
+h1{
+  font-size: 2rem;
+}
