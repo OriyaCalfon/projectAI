@@ -1,10 +1,17 @@
 
 import OpenAI from "openai";
 
-const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_API_KEY,
-  dangerouslyAllowBrowser: true
-});
+let openai;
+
+if (import.meta.env.VITE_API_KEY) {
+  openai = new OpenAI({
+    apiKey: import.meta.env.VITE_API_KEY,
+    dangerouslyAllowBrowser: true
+  });
+} else {
+  console.warn("No API key found. Skipping OpenAI setup.");
+}
+
 
 export async function main(event, inputs, temperature) {
   const messages = [
