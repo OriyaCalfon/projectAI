@@ -15,7 +15,7 @@ body {
 .main {
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgb(205 180 228);
+  background-color: rgb(116, 22, 204);
 }
 
 #mainDiv {
@@ -26,7 +26,6 @@ body {
 }
 
 .side {
-  /* background-color: #f4f4f4;  צבע אפור יפה  */
   background-color: rgb(236 235 188);
   padding: 20px;
   box-sizing: border-box;
